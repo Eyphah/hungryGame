@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body {
+   font-family: Verdana, Helvetica, Arial, sans-serif;
+   background-color: white;
+   margin: 0% 2%;
+}
+
+kbd {
+   padding: 0px 2px;
+   font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+   color: rgb(60, 60, 60);
+   font-weight: bold;
+   font-size: large;
+}
+
+#info,
+#field {
+   font-size: xx-large;
+   display: inline-block;
+   vertical-align: top;
+}
+
+#info {
+   width: 250px;   
+}
+
+#info div {
+   margin: 20px 0px;
+   padding: 10px;
+}
+
+#scoreZone {
+   text-align: center;
+}
+#score {   
+   display: inline-block;
+   border: solid thin #DDD;
+   width: 120px;
+   text-align: right;
+   background-color: white;
+   padding: 4px;
+   margin: 0px 4px;
+}
+
+#lifes img {
+   width: 72px;
+}
+
+#field {
+   text-align: center;
+   position: relative;
+   margin : 10px;
+}
+
+#lifes {
+   text-align: center;
+   box-shadow: 0px 0px 4px 4px #EEE;
+}
+
+#playfield {   
+   display: block;   
+   border: 2px solid rgba(128,128,128,0.5);
+   z-index : 20;
+}
+
+#cover::after {
+   content : "";
+   background-image: url("../images/decor_800.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;      
+   opacity : 0.5;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   position: absolute;
+   z-index : -1;
+}
+
+div#control {
+   text-align: center;
+   margin: 10px;
+}
+
+button {
+   font-size: xx-large;
+}

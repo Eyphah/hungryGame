@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+   <meta charset="UTF-8" />
+   <title>Miam : mangez des fruits !</title>
+   <meta name="author" content="your name" />
+
+   <link rel="stylesheet" type="text/css" href="./style/style.css" />
+</head>
+
+<body>
+   <h2>Yummy: Eat fruits !</h2>
+   
+   <p>Mangez les fruits pour marquer des points, attention aux <i>hungries</i> qui mangent les fruits... ou vous... et se multiplient quand ils ont suffisamment mangé.</p>
+
+   <div id="game">
+      <div id="info">
+         <div id="scoreZone">
+            <div id="score"> 0 </div>pts
+         </div>
+         
+         <div id="lifes">
+            <img src="images/greedy64.png" alt="" id="life-1" />
+            <img src="images/greedy64.png" alt="" id="life-2" />
+            <img src="images/greedy64.png" alt="" id="life-3" />
+         </div>
+
+         <div id="control">
+            <button id="stopAndStartGame">Play</button>
+         </div>
+      </div>
+      <div id="field">
+         <div id="cover">
+         <canvas id="playfield" width="800" height="450" tabindex="1"></canvas>
+      </div>   
+      </div>
+   </div>
+
+</body>
+
+</html>
